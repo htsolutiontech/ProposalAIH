@@ -1698,7 +1698,7 @@ const Auth = (function(){
       <div class="field"><label for="aPass">${t("Mật khẩu","Password")}</label><div class="pw"><input id="aPass" name="password" type="password" autocomplete="current-password" required><button type="button" onclick="Auth.togglePw('aPass',this)">${t("Hiện","Show")}</button></div></div>
       <div id="authErr" class="notice red small auth-err${msg?" show":""}" role="alert">${msg?esc(msg):""}</div>
       <button class="btn full" type="submit">${t("Đăng nhập","Sign in")}</button>
-      <p class="auth-hint">${t("Copyright @2026","Accounts are issued by the administrator. Forgot your password: ask the administrator for a reset.")}</p></form>`);
+      <p class="auth-hint">${t("Đã thiết lập bản quyền","Copyright @2026")}</p></form>`);
     setTimeout(()=>{ const el=$(user?"aPass":"aUser"); if(el) el.focus(); },30);
   }
   function showChange(forced,msg){
